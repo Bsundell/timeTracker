@@ -4,18 +4,63 @@
 <head>
   <meta charset="utf-8">
 
-  <title>The HTML5 Herald</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+  <title>timeTracker</title>
+  <meta name="Employee Time Tracker" content="Employee Time Tracker">
+  <meta name="Bryant Sundell" content="SitePoint">
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
 
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
+
 </head>
 
 <body>
-  <script src="js/scripts.js"></script>
+  <script language="javascript">
+  <!--//
+  /*This Script allows people to enter by using a form that asks for a
+  UserID and Password*/
+  function pasuser(form) {
+  if (form.id.value=="Bsundell") {
+  if (form.pass.value=="Bsundell123") {
+  location="tracker.html"
+  } else {
+  alert("Invalid Password")
+  }
+  } else {  alert("Invalid UserID")
+  }
+  }
+  //-->
+  </script>
+
+  <center>
+  <table bgcolor="white" cellpadding="12" border="1">
+    <tr>
+      <td colspan="2">
+        <center>
+          <h1><i><b>Login
+Area</b></i></h1></center>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h1><i><b>UserID:</b></i></h1></td>
+      <td>
+        <form name="login"><input name="id" type="text"></td>
+    </tr>
+    <tr>
+      <td>
+        <h1><i><b>Password:</b></i></h1></td>
+      <td><input name="pass" type="password"></td>
+    </tr>
+    <tr>
+      <td>
+        <center><input type="button" value="Login" onClick="pasuser(this.form)"></center>
+      </td>
+      <td>
+        <center><br><input type="Reset"></form>
+      </td>
+    </tr>
+  </table>
+  </center>
+
 </body>
 </html>
