@@ -1,2 +1,4 @@
 # timeTracker
-Employee time tracker
+
+------
+## Requirements
