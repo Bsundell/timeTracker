@@ -15,20 +15,19 @@
 
 <body>
   <script language="javascript">
-  <!--//
-  /*This Script allows people to enter by using a form that asks for a
-  UserID and Password*/
-  function pasuser(form) {
+
+  function validate(form) {
   if (form.id.value=="Bsundell") {
   if (form.pass.value=="Bsundell123") {
   location="tracker.html"
   } else {
   alert("Invalid Password")
   }
-  } else {  alert("Invalid UserID")
+  } else {
+    alert("Invalid UserID")
   }
   }
-  //-->
+
   </script>
 
   <center>
@@ -53,7 +52,7 @@ Area</b></i></h1></center>
     </tr>
     <tr>
       <td>
-        <center><input type="button" value="Login" onClick="pasuser(this.form)"></center>
+        <center><input type="button" value="Login" onClick="validate(this.form)"></center>
       </td>
       <td>
         <center><br><input type="Reset"></form>
